@@ -1,0 +1,97 @@
+.footer {
+    background-color: $mainColor_grey;
+}
+
+.footer-block {
+		display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 118px;
+        padding: 67px 0;
+
+        @media (max-width: 915px) {
+            gap: 5%;
+        }
+
+        @media (max-width: 670px) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: 25px;
+            padding: 30px;
+        }
+
+		&__contacts {
+
+            & a {
+                display: block;
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 14px;
+                color: $fontFooter_white;
+                margin: 0 0 15px 0;
+
+                &:last-child {
+                    margin: 0;
+                }
+            }    
+		}
+
+		&__info {
+            text-align: start;
+
+            @media (max-width: 670px) {
+                text-align: center;
+            }   
+
+            & h4 {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 16px;
+                letter-spacing: 0.07em;
+                color: $fontColor_white;
+                margin: 7px 0 33px 0;
+            }
+
+            & a {
+            display: block;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            color: $fontFooter_white;
+            margin: 0 0 15px 0;
+
+            &:last-child {
+                margin: 0;
+            }
+        }
+	}        
+}
+
+.logo-block {
+
+		display: flex;
+        justify-content: flex-start;
+        gap: 10px;
+        align-items: flex-end;
+        margin: 0 0 32px 0;
+
+		// &__image {}
+
+		&__title {
+            font-family: $font_Prata;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 19px;
+            letter-spacing: 0.14em;
+            color: $fontColor_white;
+		}
+}
