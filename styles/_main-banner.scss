@@ -1,0 +1,211 @@
+.banner-contain {
+    max-width: 1138px;
+    margin: 0 auto;
+    background-color: $bgColor_white;
+}
+
+.banner-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('../img/bg/ellipse.png');
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: contain;
+
+    @media (max-width: 950px) {
+        flex-direction: column-reverse;
+         background-image: none;
+    }   
+}
+
+.info-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 0 0 75px;
+    width: 47%;
+
+    @media (max-width: 950px) {
+        width: 100%;
+        margin-top: -18px;
+        background-color: $bgColor_white;
+        text-align: center;   
+        align-items: center;
+        padding: 0 0 0 0;
+    }
+
+    & h2 {
+        font-family: $font_PlayfairDisplay;
+        font-size: 45px;
+        line-height: 60px;
+        color: $fontColor_black;
+        margin: 0 0 20px 0;
+
+        & span {
+            position: relative;
+
+            &::before {
+                content: '';
+                background-color: $streak_color;
+                width: 50px;
+                height: 1px;
+                position: absolute;
+                top: 36px;
+                left: -60px;
+
+                @media (max-width: 490px) {
+                    content: none;;
+                }
+            }
+        }
+    }
+
+    & h3 {
+        font-family: $font_PlayfairDisplay;
+        font-size: 30px;
+        line-height: 40px;
+        color: $fontColor_black;
+        margin: 0 0 40px 0;
+    }
+
+    & p {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 21px;
+        color: $fontColor_black_tsn;
+        margin: 0 0 64px 0;
+    }
+
+    & a {
+        display: inline-block;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.05em;
+        color: $fontColor_white;
+        background-color: $mainColor_grey;
+        padding: 24px 36px;
+        border: 2px solid $mainColor_grey;
+
+        &:hover {
+            background-color: $fontColor_white;
+            color: $mainColor_grey;
+        }
+    }  
+}
+
+.watch-banner {
+		display: flex;
+
+        @media (max-width: 950px) {
+            background: url(../img/bg/ellipse.png) 0 0 no-repeat;
+            background-size: contain;
+        }
+
+		&__price {
+            font-family: $font_Prata;
+            font-size: 16px;
+            line-height: 22px;
+            color: $fontColor_black;
+            width: 100px;
+
+            @media (max-width: 950px) {
+                flex-basis: 50%;
+            }
+
+            @media (max-width: 490px) {
+                font-size: 14px;
+            }
+            
+            & p {
+                position: relative;
+                top: 18%;
+
+                @media (max-width: 950px) {
+                    flex-basis: 50%;
+                    right: -42%;
+                }
+
+                & span {
+                    font-family: 'Roboto';
+                    font-size: 21px;
+                    font-weight: 300;
+
+                    @media (max-width: 490px) {
+                        font-size: 16px;
+                    }
+                }
+
+                &::after {
+                    content: '';
+                    background-color: $streak_color;
+                    width: 50px;
+                    height: 1px;
+                    position: absolute;
+                    top: 10px;
+                    left: 88px;
+
+                    @media (max-width: 490px) {
+                        content: none;
+                    }
+                }
+            }    
+		}
+
+		&__image {
+            max-width: 502px;
+            
+            & img {
+                width: 100%;
+            }
+
+            @media (max-width: 950px) {
+                flex-basis: 100%;;
+            }
+		}
+
+		&__size {
+            font-family: $font_Prata;
+            font-size: 16px;
+            line-height: 22px;
+            color: $fontColor_black;
+            width: 140px;
+
+            @media (max-width: 950px) {
+                flex-basis: 50%;;
+            }
+            
+            @media (max-width: 490px) {
+                font-size: 14px;
+            }
+
+            & p {
+                position: relative;
+                top: 79%;
+                right: 10%;
+
+                @media (max-width: 490px) {
+                    top: 72%;
+                }
+
+                & span {
+
+                    &::after {
+                        content: '';
+                        background-color: $streak_color;
+                        width: 50px;
+                        height: 1px;
+                        position: absolute;
+                        top: 9px;
+                        right: 107%;
+
+                        @media (max-width: 490px) {
+                            content: none;
+                        }
+                    }
+                }    
+            }
+		}
+}

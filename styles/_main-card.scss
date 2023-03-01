@@ -1,0 +1,137 @@
+.card-block {
+    max-width: 1170px;
+    margin: -25px auto 0 auto;
+    background-color: $bgColor_white;
+    padding: 75px 0 86px 0;
+
+    @media (max-width: 950px) {
+        margin: 0 auto;
+    }
+}
+
+.card-header {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-size: 32px;
+    line-height: 43px;
+    color: $fontColor_black;
+    text-align: center;
+}
+
+.card-shop {
+    text-align: end;
+
+    @media (max-width: 1170px) {
+       padding-right: 10px;
+    }
+
+    @media (max-width: 570px) {
+       padding-top: 10px;
+    }
+
+    @media (max-width: 310px) {
+       padding-top: 15px;
+    }
+
+    & a {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: $mainColor_grey;
+        display: inline-block;
+        padding: 0 0 10px 0;
+        border-bottom: 1px solid #C4C0B6;
+    }
+}
+
+.card-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 650px) {
+       flex-direction: column;
+    }
+}
+
+.card-box {
+    max-width: 370px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+		&__info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            width: 100%;
+            padding: 40px 0 0 40px;
+            gap: 10px;
+
+            & h4 {
+                font-family: $font_PlayfairDisplay;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: 0.03em;
+                color: $fontColor_black_tsn;
+            }
+
+            & p {               
+                font-family: $font_Prata;
+                font-style: normal;
+                font-size: 12px;
+                line-height: 16px;
+                color: $fontColor_black_tsn;
+
+                & span {
+                    font-family: 'Roboto';
+                    font-size: 16px;
+                    font-weight: 300;
+                }
+            }
+		}
+
+		&__image {
+            max-width: 370px;
+            background-image: url('../img/card/bg_card.png');
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            background-size: cover;
+
+            & img {
+                width: 100%;
+            }
+		}
+
+		&__optional {
+            width: 100%;
+            margin: 20px 0 40px 0;
+            
+            & a {
+                display: inline-block;
+                font-family: $font_PlayfairDisplay;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 21px;
+                color: $fontColor_black;
+                position: relative;
+                padding: 0 0 0 88px;
+
+                &::before {
+                    content: '';
+                    background-color: $streak_color;
+                    width: 30px;
+                    height: 1px;
+                    position: absolute;
+                    top: 12px;
+                    right: 97px;
+                }
+            }
+		}
+}
